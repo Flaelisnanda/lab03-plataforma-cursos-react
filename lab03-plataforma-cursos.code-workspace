@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "name": "LAB03 - Plataforma de Cursos",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.cwd": "${workspaceFolder}"
+  }
+}
