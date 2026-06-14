@@ -1,38 +1,7 @@
 {
-  "usuarios": [
-    {
-      "id": "1",
-      "nomeCompleto": "Prof. Ana Silva",
-      "email": "ana.silva@escola.com",
-      "senhaHash": "hash_demo_123",
-      "dataCadastro": "2026-01-15"
-    }
-  ],
-  "categorias": [
-    {
-      "id": "1",
-      "nome": "Programação",
-      "descricao": "Cursos de desenvolvimento de software"
-    },
-    {
-      "id": "2",
-      "nome": "Design",
-      "descricao": "Cursos de design gráfico e UX/UI"
-    }
-  ],
-  "cursos": [
-    {
-      "id": "1",
-      "titulo": "JavaScript Essencial",
-      "descricao": "Fundamentos da linguagem JavaScript",
-      "idInstrutor": 1,
-      "idCategoria": 1,
-      "nivel": "Iniciante",
-      "dataPublicacao": "2026-02-01",
-      "totalAulas": 0,
-      "totalHoras": 0
-    }
-  ],
+  "usuarios": [],
+  "categorias": [],
+  "cursos": [],
   "modulos": [],
   "aulas": [],
   "matriculas": [],
@@ -41,55 +10,7 @@
   "trilhas": [],
   "trilhasCursos": [],
   "certificados": [],
-  "planos": [
-    {
-      "id": "1",
-      "nome": "Básico",
-      "descricao": "Acesso a 3 cursos por mês",
-      "preco": 49.9,
-      "duracaoMeses": 1
-    },
-    {
-      "id": "2",
-      "nome": "Premium",
-      "descricao": "Acesso ilimitado a todos os cursos",
-      "preco": 99.9,
-      "duracaoMeses": 1
-    }
-  ],
-  "assinaturas": [
-    {
-      "idUsuario": 1,
-      "idPlano": 1,
-      "dataInicio": "2026-06-12",
-      "dataFim": "2026-07-12",
-      "id": "4svZLwCmrSM"
-    },
-    {
-      "idUsuario": 1,
-      "idPlano": 2,
-      "dataInicio": "2026-06-13",
-      "dataFim": "2026-07-13",
-      "id": "MdSIKeQ"
-    }
-  ],
-  "pagamentos": [
-    {
-      "idAssinatura": "4svZLwCmrSM",
-      "valorPago": 49.9,
-      "dataPagamento": "2026-06-12",
-      "metodoPagamento": "PIX",
-      "idTransacaoGateway": "TXN-1781245985256-G0DLU7TE",
-      "id": "-NkQcV8_q7Y"
-    },
-    {
-      "idAssinatura": "MdSIKeQ",
-      "valorPago": 99.9,
-      "dataPagamento": "2026-06-13",
-      "metodoPagamento": "Boleto",
-      "idTransacaoGateway": "TXN-1781317906564-KMZVVHES",
-      "id": "cq0xPjk"
-    }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  "planos": [],
+  "assinaturas": [],
+  "pagamentos": []
 }

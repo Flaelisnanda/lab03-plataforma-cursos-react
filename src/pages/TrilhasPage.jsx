@@ -25,7 +25,7 @@ export default function TrilhasPage() {
     const errs = Validators.validateFields([
       { value: trilhaForm.titulo, label: 'Título', rules: ['required'] },
       { value: trilhaForm.descricao, label: 'Descrição', rules: ['required'] },
-      { value: trilhaForm.idCategoria, label: 'Categoria', rules: ['required', 'positive'] }
+      { value: trilhaForm.idCategoria, label: 'Categoria', rules: ['required'] }
     ]);
     setErrorsT(errs);
     if (errs.length) return;
@@ -40,8 +40,8 @@ export default function TrilhasPage() {
   const submitCurso = async (e) => {
     e.preventDefault();
     const errs = Validators.validateFields([
-      { value: cursoForm.idTrilha, label: 'Trilha', rules: ['required', 'positive'] },
-      { value: cursoForm.idCurso, label: 'Curso', rules: ['required', 'positive'] },
+      { value: cursoForm.idTrilha, label: 'Trilha', rules: ['required'] },
+      { value: cursoForm.idCurso, label: 'Curso', rules: ['required'] },
       { value: cursoForm.ordem, label: 'Ordem', rules: ['required', 'positive'] }
     ]);
     setErrorsC(errs);

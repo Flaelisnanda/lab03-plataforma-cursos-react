@@ -20,7 +20,7 @@ export default function Topbar() {
           <div className="topbar-brand-icon">
             <GraduationCap size={16} color="#fff" />
           </div>
-          EduPlatform
+          LearnHub
         </div>
         <button className="topbar-toggle" onClick={() => setOpen(!open)}>
           {open ? <X size={18} /> : <Menu size={18} />}

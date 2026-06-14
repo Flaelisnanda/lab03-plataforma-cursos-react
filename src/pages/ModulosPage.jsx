@@ -26,9 +26,9 @@ export default function ModulosPage() {
     e.preventDefault();
     const data = { idCurso: Number(idCurso), titulo: modForm.titulo.trim(), ordem: Number(modForm.ordem) };
     const errs = Validators.validateFields([
-      { value: data.idCurso, label: 'Curso', rules: ['required', 'positive'] },
+      { value: idCurso, label: 'Curso', rules: ['required'] },
       { value: data.titulo, label: 'Título', rules: ['required'] },
-      { value: data.ordem, label: 'Ordem', rules: ['required', 'positive'] }
+      { value: modForm.ordem, label: 'Ordem', rules: ['required', 'positive'] }
     ]);
     setErrorsM(errs);
     if (errs.length) return;

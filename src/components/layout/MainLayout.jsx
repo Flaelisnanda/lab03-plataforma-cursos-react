@@ -71,9 +71,6 @@ export default function MainLayout() {
         <main className="content-area">
           <Outlet />
         </main>
-        <footer className="app-footer">
-          LAB03 — Plataforma de Cursos Online
-        </footer>
       </div>
       <Toast />
     </div>

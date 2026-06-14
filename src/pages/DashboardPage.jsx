@@ -39,7 +39,7 @@ export default function DashboardPage() {
               Plataforma de Cursos Online
             </span>
             <h1 style={{ fontWeight: 800, fontSize: 'clamp(1.6rem, 3vw, 2.25rem)', letterSpacing: '-0.03em', marginBottom: 12 }}>
-              Bem-vindo à EduPlatform
+              Bem-vindo à LearnHub
             </h1>
             <p style={{ opacity: 0.85, fontSize: '0.95rem', lineHeight: 1.6, marginBottom: 28, maxWidth: 480 }}>
               Gerencie cursos, matrículas, progresso e assinaturas — tudo em um só lugar.

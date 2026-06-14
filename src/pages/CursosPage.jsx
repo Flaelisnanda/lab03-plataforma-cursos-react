@@ -26,8 +26,8 @@ export default function CursosPage() {
     const errs = Validators.validateFields([
       { value: data.titulo, label: 'Título', rules: ['required'] },
       { value: data.descricao, label: 'Descrição', rules: ['required'] },
-      { value: data.idInstrutor, label: 'Instrutor', rules: ['required', 'positive'] },
-      { value: data.idCategoria, label: 'Categoria', rules: ['required', 'positive'] },
+      { value: form.idInstrutor, label: 'Instrutor', rules: ['required'] },
+      { value: form.idCategoria, label: 'Categoria', rules: ['required'] },
       { value: data.nivel, label: 'Nível', rules: ['required'] },
       { value: data.dataPublicacao, label: 'Data', rules: ['required', 'date'] }
     ]);

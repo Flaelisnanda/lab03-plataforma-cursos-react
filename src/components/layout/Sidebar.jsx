@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import {
   LayoutDashboard, Tag, BookOpen, Route, Layers,
   UserPlus, UserCheck, TrendingUp, Award,
-  CreditCard, ShoppingCart, GraduationCap, Database
+  CreditCard, ShoppingCart, GraduationCap
 } from 'lucide-react';
 
 const menu = [
@@ -30,8 +30,7 @@ export default function Sidebar() {
           <GraduationCap size={20} color="#fff" />
         </div>
         <div>
-          <span className="brand-name">EduPlatform</span>
-          <span className="brand-sub">LAB03 · React</span>
+          <span className="brand-name">LearnHub</span>
         </div>
       </div>
 
@@ -53,12 +52,6 @@ export default function Sidebar() {
         )}
       </div>
 
-      <div className="sidebar-footer">
-        <small style={{ color: '#475569', display: 'flex', alignItems: 'center', gap: 6 }}>
-          <Database size={12} />
-          JSON Server API
-        </small>
-      </div>
     </aside>
   );
 }

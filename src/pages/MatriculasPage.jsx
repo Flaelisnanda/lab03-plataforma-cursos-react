@@ -29,8 +29,8 @@ export default function MatriculasPage() {
       dataMatricula: form.dataMatricula || new Date().toISOString().split('T')[0]
     };
     const errs = Validators.validateFields([
-      { value: data.idUsuario, label: 'Usuário', rules: ['required', 'positive'] },
-      { value: data.idCurso, label: 'Curso', rules: ['required', 'positive'] },
+      { value: form.idUsuario, label: 'Usuário', rules: ['required'] },
+      { value: form.idCurso, label: 'Curso', rules: ['required'] },
       { value: data.dataMatricula, label: 'Data', rules: ['required', 'date'] }
     ]);
     setErrors(errs);

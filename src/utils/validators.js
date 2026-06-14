@@ -2,7 +2,9 @@ export const Validators = {
   emailRegex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
 
   isRequired(value) {
-    return value !== null && value !== undefined && String(value).trim() !== '';
+    if (value === null || value === undefined) return false;
+    if (value === 0 || value === '0') return false;
+    return String(value).trim() !== '';
   },
 
   isEmail(value) {

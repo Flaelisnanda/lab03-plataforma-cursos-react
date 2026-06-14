@@ -18,8 +18,8 @@ export default function CheckoutPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const errs = Validators.validateFields([
-      { value: form.idUsuario, label: 'Usuário', rules: ['required', 'positive'] },
-      { value: form.idPlano, label: 'Plano', rules: ['required', 'positive'] },
+      { value: form.idUsuario, label: 'Usuário', rules: ['required'] },
+      { value: form.idPlano, label: 'Plano', rules: ['required'] },
       { value: form.metodoPagamento, label: 'Método', rules: ['required'] }
     ]);
     setErrors(errs);
